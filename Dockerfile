@@ -19,8 +19,8 @@ RUN yum update -y
 #COPY RBA/Neuro_AWS_SALES /opt/.
 
 ## Extract RBAUI and start application ...
-#RUN  	cd /opt/ && tar -xzf RBAUI.tar.gz && \
-#	rm -rf /opt/apache-tomcat-7.0.73/webapps/*
+#RUN     cd /opt/ && tar -xzf RBAUI.tar.gz && \
+#        rm -rf /opt/apache-tomcat-7.0.73/webapps/*
 
 #RUN mv /opt/*.war /opt/apache-tomcat-7.0.73/webapps/
 
@@ -33,5 +33,3 @@ RUN yum update -y
 
 ## Start application with starting application.....
 #ENTRYPOINT ["./root/docker-entrypoint.sh"]
-
-
