@@ -5,7 +5,7 @@
 	"Role":"ecsServiceRole",
 	"TargetGroupArn":"",
 	"Image": {
- 		"Fn::GetParam": ["MyAppBuild", "build.json", "Image"]}
+ 		"Fn::GetParam": ["MyAppBuild", "imagedefinitions.json", "Image"]}
 	}
 
 }
