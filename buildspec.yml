@@ -5,18 +5,18 @@ phases:
   commands:
    - echo Logging in to Amazon ECR...
    - aws --version
-   - aws ecr get-login --region us-west-1
    - REPOSITORY_URI=719472067992.dkr.ecr.us-west-1.amazonaws.com/neurotest0304
    - IMAGE_TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)"
  build:
   commands:
    - echo Build started on `date`
-   - echo Building the docker images....
+   - echo Building the docker images.... 
    - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
  post_build:
   commands:
    - echo Build completed on `date`
    - echo Pushing the docker images...
+   - $(aws ecr get-login --no-include-email --region us-west-1)
    - docker push "$REPOSITORY_URI:$IMAGE_TAG"
    - echo Writing image definitions file...
    - printf '[{"name":"hello-world","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
