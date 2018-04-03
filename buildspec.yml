@@ -25,4 +25,4 @@ artifacts:
  files: 
   - imagedefinitions.json
   - service.yml
-  - environments/production.json
+  - production.json
