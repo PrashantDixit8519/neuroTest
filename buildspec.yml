@@ -26,3 +26,4 @@ artifacts:
   - imagedefinitions.json
   - service.yml
   - environments/production.json
+ discard-paths: yes
