@@ -1,11 +1,12 @@
 {
 	"Parameters": {
-	"Cluster": "Cluster",
-	"DesiredCount":"1",
-	"Role":"ecsServiceRole",
-	"TargetGroupArn":"",
-	"Image": {
- 		"Fn::GetParam": ["MyAppBuild", "imagedefinitions.json", "Image"]}
+	  "Cluster": "Cluster",
+	  "DesiredCount":"1",
+	  "Role":"ecsServiceRole",
+	  "TargetGroupArn":"",
+	  "Image": {
+ 		"Fn::GetParam": ["MyAppBuild", "imagedefinitions.json", "Image"]
+	  }
 	}
 
 }

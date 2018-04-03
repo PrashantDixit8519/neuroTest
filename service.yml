@@ -1,7 +1,7 @@
 parameters:
   Cluster:
     Type: String
-  DescriptionCount:
+  DesiredCount:
     Type: String
   Image:
     Type: String
