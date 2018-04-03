@@ -1,0 +1,12 @@
+{
+    "auths": {
+        "https://index.docker.io/v1/": {
+            "auth": "YW11cmRhY2E6c3VwZXJzZWNyZXRwYXNzd29yZA==",
+            "email": "amurdaca@redhat.com"
+        },
+        "localhost:5001": {
+            "auth": "aGVzdHVzZXI6dGVzdHBhc3N3b3Jk",
+            "email": ""
+        }
+    }
+}
