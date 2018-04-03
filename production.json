@@ -1,7 +1,7 @@
 {
 	"Parameters": {
-	  "Cluster": "Cluster",
-	  "DesiredCount":"1",
+	  "Cluster": "NeuroTestsetup",
+	  "DesiredCount":"2",
 	  "Role":"ecsServiceRole",
 	  "TargetGroupArn":"arn:aws:elasticloadbalancing:us-west-1:719472067992:targetgroup/NeuroSales/787892e73eca8bb6",
 	  "Image": {
