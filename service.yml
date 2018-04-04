@@ -10,16 +10,12 @@ Parameters:
     Type: String
   Containername:
     Type: String
-  Role:
-    Type: String
 Resources:
   Service:
     Type: AWS::ECS::Service
     Properties:
       Cluster:
         Ref: Cluster
-      Role:
-        Ref: Role
       TaskDefinition:
         Ref: TaskDefinition
       DesiredCount:
