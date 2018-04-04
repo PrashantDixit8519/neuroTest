@@ -1,6 +1,6 @@
 {
 	"Parameters": {
-	  "Cluster": "NeuroTestsetup",
+	  "Cluster": "NeuroTest",
 	  "DesiredCount":"2",
 	  "Role":"ecsServiceRole",
 	  "Image": {
