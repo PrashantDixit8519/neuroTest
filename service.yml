@@ -1,3 +1,5 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'AWS CloudFormation for creating ECS services..'
 parameters:
   Cluster:
     Type: String
