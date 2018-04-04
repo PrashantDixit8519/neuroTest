@@ -7,8 +7,6 @@ parameters:
     Type: String
   Role:
     Type: String
-  TargetGroupArn:
-    Type: String
 Resources:
   Service:
     Type: AWS::ECS::Service
