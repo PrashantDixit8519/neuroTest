@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'AWS CloudFormation for creating ECS services..'
-parameters:
+Parameters:
   Cluster:
     Type: String
   DesiredCount:
@@ -14,7 +14,7 @@ Resources:
     Type: AWS::ECS::Service
     Properties:
       Cluster: !Ref Cluster
-      DesiredCount: !Ref DescriptionCount
+      DesiredCount: !Ref DesiredCount
       Role: !Ref Role
       TaskDefinition: !Ref TaskDefinition
   TaskDefinition:
