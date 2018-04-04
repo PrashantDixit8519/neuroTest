@@ -11,17 +11,17 @@ Resources:
   Service:
     Type: AWS::ECS::Service
     Properties:
-      Cluster: "!Ref Cluster"
-      DesiredCount: "!Ref DescriptionCount"
-      Role: "!Ref Role"
-      TaskDefinition: "!Ref TaskDefinition"
+      Cluster: !Ref Cluster
+      DesiredCount: !Ref DescriptionCount
+      Role: !Ref Role
+      TaskDefinition: !Ref TaskDefinition
   TaskDefinition:
     Type: AWS::ECS::TaskDefinition
     Properties:
       Family: Service
       ContainerDefinitions:
       - Name: Neuro
-      - Image: "!Ref Image"
+      - Image: !Ref Image
       - Memory: 512
       - essential: true
       - PortMappings:
