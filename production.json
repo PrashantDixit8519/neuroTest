@@ -1,6 +1,7 @@
 {
 	"Parameters": {
 	  "Cluster": "NeuroTest",
+	  "Containername": "neuroserver",
 	  "DesiredCount":"2",
 	  "Role":"ecsServiceRole",
 	  "Image": {
