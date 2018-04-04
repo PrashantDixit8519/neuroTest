@@ -22,15 +22,11 @@ Resources:
     Properties:
       Family: Service
       ContainerDefinitions:
-      - Name: Neuro
+      - Name: testingcon
       - Image: !Ref Image
       - Memory: 512
       - Essential: true
       - PortMappings:
-        - protocol: tcp
-          containerPort: 8080
-          hostport: 8080
-        - protocol: tcp
-          containerPort: 3000
-          hostport: 3000
-
+        - Protocol: tcp
+          ContainerPort: 8080
+          HostPort: 8080
