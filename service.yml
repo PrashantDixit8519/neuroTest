@@ -30,11 +30,6 @@ Resources:
         ContainerPort: '8080'
         LoadBalancerName:
           Ref: LoadBalancerName
-      - ContainerName:
-          Ref: Containername
-        ContainerPort: '3000'
-        LoadBalancerName:
-          Ref: LoadBalancerName
       DesiredCount:
         Ref: DesiredCount
   TaskDefinition:
