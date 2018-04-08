@@ -1,6 +1,6 @@
 FROM docker.io/sotax/rhel7.3
 
-MAINTAINER Neuro Sales team
+MAINTAINER Neuro Sales team Pune
 
 RUN yum update -y
 
@@ -18,7 +18,7 @@ RUN wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.73/bin/apache-tomc
 ## Copy artifacts to /opt directory of container.
 COPY jre-7u80-linux-x64.rpm /opt/.
 
-## Extract RBAUI and start application ...
+## Extract RBAUI RBAUI and start application ...
 #RUN     cd /opt/ && tar -xzf RBAUI.tar.gz && \
 #        rm -rf /opt/apache-tomcat-7.0.73/webapps/*
 
