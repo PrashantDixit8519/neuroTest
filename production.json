@@ -4,7 +4,7 @@
 	  "Containername": "neuroserver",
 	  "DesiredCount":"2",
 	  "LoadBalancerName": "NeuroSales",
-	  "Role": "ECS_role"
+	  "Role": "ECS_role",
 	  "Image": {
  		"Fn::GetParam": ["MyAppBuild", "imagedefinitions.json", "Image"]
 	  }
